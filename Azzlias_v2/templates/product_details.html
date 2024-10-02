@@ -1,0 +1,162 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block body %}
+{% include "base/navbar_light.html" %}
+
+{% for products_data in products_data %}
+<div class="tf-breadcrumb">
+    <div class="container">
+        <div class="tf-breadcrumb-wrap d-flex justify-content-between flex-wrap align-items-center">
+            <div class="tf-breadcrumb-list">
+                <a href="/" class="text">Home</a>
+                <i class="icon icon-arrow-right"></i>
+                <a href="{% url "shop_category" products_data.category.slug %}" class="text">{{products_data.category}}</a>
+                <i class="icon icon-arrow-right"></i>
+                <span class="text">{{products_data.name}}</span>
+            </div>
+           
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% for products_data in products_data %}
+<section class="flat-spacing-4 pt_0">
+    <div class="tf-main-product section-image-zoom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="tf-product-media-wrap">
+                        <div class="mb_10">
+                            <a href="{{products_data.image.url}}" target="_blank" class="item" data-pswp-width="770px" data-pswp-height="1075px">
+                                <img class="tf-image-zoom ls-is-cached lazyloaded" data-zoom="{{products_data.image.url}}" data-src="{{products_data.image.url}}" src="{{products_data.image.url}}" alt="">
+                            </a>
+                        </div>
+                        <div class="">
+                            <div class="d-grid grid-template-columns-2 gap-10" id="gallery-started">
+                                {% for products_data_images in images %}
+                                
+                                <a href="{{products_data_images.image.url}}" target="_blank" class="item" data-pswp-width="770px" data-pswp-height="1075px">
+                                    <img id="image-color-brown" class="radius-10 tf-image-zoom ls-is-cached lazyloaded" data-zoom="{{products_data_images.image.url}}" data-src="{{products_data_images.image.url}}" src="{{products_data_images.image.url}}" alt="">
+                                </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tf-product-info-wrap sticky-top">
+                        <div class="tf-zoom-main"></div>
+                        <div class="tf-product-info-list other-image-zoom">
+                            <div class="tf-product-info-title">
+                                <h5>{{products_data.name}}</h5>
+                            </div>
+                            <div class="tf-product-info-badges">
+                                <div class="badges">Best seller</div>
+                                <div class="product-status-content">
+                                    <i class="icon-lightning"></i>
+                                    <p class="fw-6">Selling fast!</p>
+                                </div>
+                            </div>
+                            <div class="tf-product-info-price">
+                                <div class="price-on-sale">₹{{products_data.price}}</div>
+                                <div class="compare-at-price">₹{{products_data.discount_price}}</div>
+                                {% comment %} <div class="badges-on-sale"><span>20</span>% OFF</div> {% endcomment %}
+                            </div>
+                            <div>
+                                <p>{{products_data.description|safe}}</p>
+                            </div>
+                            
+                            <div class="tf-product-info-variant-picker">
+                                
+                                <div class="variant-picker-item">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="variant-picker-label">
+                                            Available Size
+                                        </div>
+                                        <a href="#find_size" data-bs-toggle="modal" class="find-size fw-6">Find your size</a>
+                                    </div>
+                                    <div class="variant-picker-values">
+
+                                        {% for size in  products_data.sizes.all %}
+                                        <label class="style-text" for="values-s" data-value="S">
+                                            <p>{{size.name}}</p>
+                                        </label>
+                                        {% endfor %}
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tf-product-info-buy-button">
+                                <form class="">
+                                    <a href="{{products_data.meesho_affiliate_link}}" class="tf-btn btn-fill justify-content-center fw-6 fs-16 flex-grow-1 animate-hover-btn btn-add-to-cart"><span>Buy in Myntra</span></a>
+                                    
+                                    <div class="w-100">
+                                        <a href="{{products_data.amazon_affiliate_link}}" class="btns-full">Buy in Amazon</a>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tf-sticky-btn-atc">
+        <div class="container">
+            <div class="tf-height-observer w-100 d-flex align-items-center">
+                <div class="tf-sticky-atc-product d-flex align-items-center">
+                    <div class="tf-sticky-atc-img">
+                        <img class=" ls-is-cached lazyloaded" data-src="images/shop/products/p-d1.png" alt="" src="images/shop/products/p-d1.png">
+                    </div>
+                    <div class="tf-sticky-atc-title fw-5 d-xl-block d-none">Cotton jersey top</div>
+                </div>
+                <div class="tf-sticky-atc-infos">
+                    <form class="">
+                        <div class="tf-sticky-atc-variant-price text-center">
+                            <select class="tf-select">
+                                <option selected="selected">Beige / S - $8.00</option>
+                                <option>Beige / M - $8.00</option>
+                                <option>Beige / L - $8.00</option>
+                                <option>Beige / XL - $8.00</option>
+                                <option>Black / S - $8.00</option>
+                                <option>Black / M - $8.00</option>
+                                <option>Black / L - $8.00</option>
+                                <option>Black / XL - $8.00</option>
+                                <option>Blue / S - $8.00</option>
+                                <option>Blue / M - $8.00</option>
+                                <option>Blue / L - $8.00</option>
+                                <option>Blue / XL - $8.00</option>
+                                <option>White / S - $8.00</option>
+                                <option>White / M - $8.00</option>
+                                <option>White / L - $8.00</option>
+                                <option>White / XL - $8.00</option>
+                            </select>
+                        </div>
+                        <div class="tf-sticky-atc-btns">
+                            <div class="tf-product-info-quantity">
+                                <div class="wg-quantity">
+                                    <span class="btn-quantity minus-btn">-</span>
+                                    <input type="text" name="number" value="1">
+                                    <span class="btn-quantity plus-btn">+</span>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="tf-btn btn-fill radius-3 justify-content-center fw-6 fs-14 flex-grow-1 animate-hover-btn btn-add-to-cart"><span>Add to cart</span></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+
+
+
+{% endblock %}

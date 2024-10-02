@@ -1,0 +1,111 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!-- Mirrored from themesflat.co/html/ecomus/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Sep 2024 11:51:30 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Ecomus - Ultimate HTML</title>
+
+    <meta name="author" content="themesflat.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- font -->
+   <link rel="stylesheet" href="{% static 'fonts/fonts.css' %}">
+   <link rel="stylesheet" href="{% static 'fonts/font-icons.css' %}">
+   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+   <link rel="stylesheet"type="text/css" href="{% static 'css/styles.css' %}"/>
+   <link rel="stylesheet" href="{% static "css/drift-basic.min.css" %}">
+   <link rel="stylesheet" href="{% static "css/photoswipe.css" %}">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png">
+
+</head>
+
+<body class="preload-wrapper popup-loader">
+
+    <!-- preload -->
+    <div class="preload preload-container">
+        <div class="preload-logo">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <div id="wrapper">
+        {% block body %}
+        
+        {% endblock body %}
+        {% include "base/footer.html" %}
+
+    </div>
+
+
+
+    <div class="offcanvas offcanvas-end canvas-search" id="canvasSearch">
+        <div class="canvas-wrapper">
+            <header class="tf-search-head" style="top: 0px;">
+                <div class="title fw-5">
+                    Search our site
+                    <div class="close">
+                        <span class="icon-close icon-close-popup" data-bs-dismiss="offcanvas" aria-label="Close"></span>
+                    </div>
+                </div>
+                <div class="tf-search-sticky">
+                    <form class="tf-mini-search-frm">
+                        <fieldset class="text">
+                            <input type="text" placeholder="Search" class="" name="text" tabindex="0" value="" aria-required="true" required="">
+                        </fieldset>
+                        <button class="" type="submit"><i class="icon-search"></i></button>
+                    </form>
+                </div>
+            </header>
+            <div class="canvas-body p-0">
+                <div class="tf-search-content">
+                    <div class="tf-cart-hide-has-results">
+                        <div class="tf-col-quicklink">
+                            <div class="tf-search-content-title fw-5">Quick link</div>
+                            <ul class="tf-quicklink-list">
+                                <li class="tf-quicklink-item">
+                                    <a href="shop-default.html" class="">Fashion</a>
+                                </li>
+                                <li class="tf-quicklink-item">
+                                    <a href="shop-default.html" class="">Men</a>
+                                </li>
+                                <li class="tf-quicklink-item">
+                                    <a href="shop-default.html" class="">Women</a>
+                                </li>
+                                <li class="tf-quicklink-item">
+                                    <a href="shop-default.html" class="">Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/swiper-bundle.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/carousel.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap-select.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/lazysize.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/count-down.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/multiple-modal.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static "js/drift.min.js" %}"></script>
+    <script type="module" src="{% static "js/model-viewer.min.js" %}"></script>
+    <script type="module" src="{% static "js/zoom.js" %}"></script>
+
+</body>
+
+
+<!-- Mirrored from themesflat.co/html/ecomus/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Sep 2024 11:52:52 GMT -->
+</html>

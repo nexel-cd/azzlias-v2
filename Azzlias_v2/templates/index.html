@@ -1,0 +1,429 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block body %}
+{% include "base/navbar.html" %}
+
+
+
+    
+    <!-- Slider -->
+    <div class="tf-slideshow slider-effect-fade position-relative"> 
+        <div dir="ltr" class="swiper tf-sw-slideshow" data-preview="1" data-tablet="1" data-mobile="1" data-centered="false" data-space="0" data-loop="true" data-auto-play="false" data-delay="0" data-speed="1000">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="wrap-slider">
+                        <img src="{% static "images/slider/fashion-slideshow-01.jpg" %}" alt="fashion-slideshow">
+                        <div class="box-content">
+                            <div class="container">
+                                <h1 class="fade-item fade-item-1">Stylish and<br>Beautiful</h1>
+                                <p class="fade-item fade-item-2">Find the perfect outfit for every occasion.</p>
+                                <a href="{% url 'shop' %}" class="fade-item fade-item-3 tf-btn btn-fill animate-hover-btn btn-xl radius-3"><span>Shop collection</span><i class="icon icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="wrap-slider">
+                        <img src="{% static "images/slider/fashion-slideshow-02.jpg" %}" alt="fashion-slideshow">
+                        <div class="box-content">
+                            <div class="container">
+                                <h1 class="fade-item fade-item-1">Style and <br class="md-hidden">Grace</h1>
+                                <p class="fade-item fade-item-2">Step out in confidence and comfort.</p>
+                                <a href="{% url 'shop' %}" class="fade-item fade-item-3 tf-btn btn-fill animate-hover-btn btn-xl radius-3"><span>Shop collection</span><i class="icon icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="wrap-slider">
+                        <img src="{% static "images/slider/fashion-slideshow-03.jpg" %}" alt="fashion-slideshow">
+                        <div class="box-content">
+                            <div class="container">
+                                <h1 class="fade-item fade-item-1">Timeless<br> Trends</h1>
+                                <p class="fade-item fade-item-2">Fashion that fits your life and your style.</p>
+                                <a href="{% url 'shop' %}" class="fade-item fade-item-3 tf-btn btn-fill animate-hover-btn btn-xl radius-3"><span>Shop collection</span><i class="icon icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-pagination">
+            <div class="container">
+                <div class="sw-dots sw-pagination-slider justify-content-center"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /Slider -->
+    <!-- Marquee -->
+    <div class="tf-marquee bg_yellow-2">
+        <div class="wrap-marquee">
+            <div class="marquee-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="15" height="20" viewBox="0 0 15 20"><path d="M14.5833 8H8.61742L9.94318 0L0 12H5.96591L4.64015 20L14.5833 8"></path></svg>
+                </div>
+                <p class="text">Spring Clearance Event: Save Up to 70%</p>
+            </div>
+            <div class="marquee-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="15" height="20" viewBox="0 0 15 20"><path d="M14.5833 8H8.61742L9.94318 0L0 12H5.96591L4.64015 20L14.5833 8"></path></svg>
+                </div>
+                <p class="text">Spring Clearance Event: Save Up to 70%</p>
+            </div>
+            <div class="marquee-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="15" height="20" viewBox="0 0 15 20"><path d="M14.5833 8H8.61742L9.94318 0L0 12H5.96591L4.64015 20L14.5833 8"></path></svg>
+                </div>
+                <p class="text">Spring Clearance Event: Save Up to 70%</p>
+            </div>
+            <div class="marquee-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="15" height="20" viewBox="0 0 15 20"><path d="M14.5833 8H8.61742L9.94318 0L0 12H5.96591L4.64015 20L14.5833 8"></path></svg>
+                </div>
+                <p class="text">Spring Clearance Event: Save Up to 70%</p>
+            </div>
+            <div class="marquee-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="15" height="20" viewBox="0 0 15 20"><path d="M14.5833 8H8.61742L9.94318 0L0 12H5.96591L4.64015 20L14.5833 8"></path></svg>
+                </div>
+                <p class="text">Spring Clearance Event: Save Up to 70%</p>
+            </div>
+            <div class="marquee-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="15" height="20" viewBox="0 0 15 20"><path d="M14.5833 8H8.61742L9.94318 0L0 12H5.96591L4.64015 20L14.5833 8"></path></svg>
+                </div>
+                <p class="text">Spring Clearance Event: Save Up to 70%</p>
+            </div>
+            <div class="marquee-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="15" height="20" viewBox="0 0 15 20"><path d="M14.5833 8H8.61742L9.94318 0L0 12H5.96591L4.64015 20L14.5833 8"></path></svg>
+                </div>
+                <p class="text">Spring Clearance Event: Save Up to 70%</p>
+            </div>
+            <div class="marquee-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="15" height="20" viewBox="0 0 15 20"><path d="M14.5833 8H8.61742L9.94318 0L0 12H5.96591L4.64015 20L14.5833 8"></path></svg>
+                </div>
+                <p class="text">Spring Clearance Event: Save Up to 70%</p>
+            </div>
+            <div class="marquee-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="15" height="20" viewBox="0 0 15 20"><path d="M14.5833 8H8.61742L9.94318 0L0 12H5.96591L4.64015 20L14.5833 8"></path></svg>
+                </div>
+                <p class="text">Spring Clearance Event: Save Up to 70%</p>
+            </div>
+            <div class="marquee-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="15" height="20" viewBox="0 0 15 20"><path d="M14.5833 8H8.61742L9.94318 0L0 12H5.96591L4.64015 20L14.5833 8"></path></svg>
+                </div>
+                <p class="text">Spring Clearance Event: Save Up to 70%</p>
+            </div>
+        </div>
+                  
+    </div>
+    <!-- /Marquee -->
+
+    <!-- Categories -->
+    <section class="flat-spacing-4 flat-categorie">
+        <div class="container-full">
+           <div class="flat-title-v2">
+                <div class="box-sw-navigation">
+                    <div class="nav-sw nav-next-slider nav-next-collection"><span class="icon icon-arrow-left"></span></div>
+                    <div class="nav-sw nav-prev-slider nav-prev-collection"><span class="icon icon-arrow-right"></span></div>
+                </div>
+                <span class="text-3 fw-7 text-uppercase title wow fadeInUp" data-wow-delay="0s">SHOP BY CATEGORIES</span>
+           </div>
+           <div class="row">
+                <div class="col-xl-9 col-lg-8 col-md-8">
+                    <div dir="ltr" class="swiper tf-sw-collection" data-preview="3" data-tablet="2" data-mobile="2" data-space-lg="30" data-space-md="30" data-space="15" data-loop="false" data-auto-play="false">
+                        <div class="swiper-wrapper">
+                            {% for categories in categories %}
+                            <div class="swiper-slide" lazy="true">
+                                <div class="collection-item style-left hover-img">
+                                    <div class="collection-inner">
+                                        <a href="{% url "shop_category" categories.slug %}" class="collection-image img-style">
+                                            <img class="lazyload" data-src="{{categories.image.url}}" src="{{categories.image.url}}" alt="collection-img">
+                                        </a>
+                                        <div class="collection-content">
+                                            <a href="{% url "shop_category" categories.slug %}" class="tf-btn collection-title hover-icon fs-15"><span>{{categories.name}}</span><i class="icon icon-arrow1-top-left"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4">
+                    <div class="discovery-new-item">
+                        <h5>Discovery all new items</h5>
+                        <a href="{% url "category" %}"><i class="icon-arrow1-top-left"></i></a>
+                    </div>
+                </div>
+           </div>
+           
+        </div>
+    </section>
+    <!-- /Categories -->
+
+    <!-- Seller -->
+    <section class="flat-spacing-5 pt_0 flat-seller">
+        <div class="container">
+            <div class="flat-title">
+                <span class="title wow fadeInUp" data-wow-delay="0s">Best Seller</span>
+                <p class="sub-title wow fadeInUp" data-wow-delay="0s">Shop the Latest Styles: Stay ahead of the curve with our newest arrivals</p>
+            </div>
+            <div class="grid-layout loadmore-item wow fadeInUp" data-wow-delay="0s" data-grid="grid-4">
+                {% for bestseller in bestseller %}
+                <!-- card product 1 -->
+                <div class="card-product fl-item">
+                    <div class="card-product-wrapper">
+                        <a href="{% url "shop_details" bestseller.product.slug %}" class="product-img">
+                            <img class="lazyload img-product" data-src="{{bestseller.product.image.url}}" src="{{bestseller.product.image.url}}" alt="image-product">
+                            <img class="lazyload img-hover" data-src="{{bestseller.product.image.url}}" src="{{bestseller.product.image.url}}" alt="image-product">
+                        </a>
+                        <div class="list-product-btn">
+                            
+                            <a href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+                                <span class="icon icon-heart"></span>
+                                <span class="tooltip">Add to Wishlist</span>
+                                <span class="icon icon-delete"></span>
+                            </a>
+                            
+                            <a href="{% url "shop_details" bestseller.product.slug %}" data-bs-toggle="modal" class="box-icon bg_white quickview tf-btn-loading">
+                                <span class="icon icon-view"></span>
+                                <span class="tooltip">Quick View</span>
+                            </a>
+                        </div>
+                        <div class="size-list">
+                            {% for sizes in bestseller.product.sizes.all %}
+                            <span> {{sizes.name}} </span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="card-product-info">
+                        <a href="{% url "shop_details" bestseller.product.slug %}" class="title link">{{bestseller.product.name}}</a>
+                        <span class="price">Rs.{{bestseller.product.price}} /-</span>
+                        
+                    </div>
+                </div>
+                <!-- card product 2 -->
+                {% endfor %}
+            </div>
+            <div class="tf-pagination-wrap view-more-button text-center">
+                <button class="tf-btn-loading tf-loading-default style-2 btn-loadmore "><span class="text">Load more</span></button>
+            </div>
+        </div>
+    </section>
+    <!-- /Seller -->
+    
+    <!-- Testimonial -->
+    <section class="flat-spacing-5 pt_0 flat-testimonial">
+        <div class="container">
+            <div class="flat-title wow fadeInUp" data-wow-delay="0s">
+                <span class="title">Happy Clients</span>
+                <p class="sub-title">Hear what they say about us</p>
+            </div>
+            <div class="wrap-carousel">
+                <div dir="ltr" class="swiper tf-sw-testimonial" data-preview="3" data-tablet="2" data-mobile="1" data-space-lg="30" data-space-md="15">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-item style-column wow fadeInUp" data-wow-delay="0s">
+                                <div class="rating">
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                </div>
+                                <div class="heading">Best Online Fashion Site</div>
+                                <div class="text">
+                                    “ Good collection of dresses ”
+                                </div>
+                                <div class="author">
+                                    <div class="name">Vijaylaxmi</div>
+                                    <div class="metas">Customer from India</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-item style-column wow fadeInUp" data-wow-delay=".1s">
+                                <div class="rating">
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                </div>
+                                <div class="heading">Great Selection and Quality</div>
+                                <div class="text">
+                                    "variety of dress's available  with best quality stitching ever "
+                                </div>
+                                <div class="author">
+                                    <div class="name">Madhavi Vamshi</div>
+                                    <div class="metas">Customer from India</span></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-item style-column wow fadeInUp" data-wow-delay=".2s">
+                                <div class="rating">
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                </div>
+                                <div class="heading">Best Customer Service</div>
+                                <div class="text">
+                                    "Best fitting dresses with quality stitching and lot of varities of dresses"
+                                </div>
+                                <div class="author">
+                                    <div class="name">Afroza Noormansoor</div>
+                                    <div class="metas">Customer from India</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-item style-column wow fadeInUp" data-wow-delay=".3s">
+                                <div class="rating">
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                    <i class="icon-start"></i>
+                                </div>
+                                <div class="heading">Great Selection and Quality</div>
+                                <div class="text">
+                                    "Loved the collection of dresses with beautiful colours and patterns ,one should defintely shop from here"
+                                </div>
+                                <div class="author">
+                                    <div class="name">Mrs Badami</div>
+                                    <div class="metas">Customer from India</span></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-sw nav-next-slider nav-next-testimonial lg"><span class="icon icon-arrow-left"></span></div>
+                <div class="nav-sw nav-prev-slider nav-prev-testimonial lg"><span class="icon icon-arrow-right"></span></div>
+                <div class="sw-dots style-2 sw-pagination-testimonial justify-content-center"></div>
+            </div>
+        </div>
+    </section>
+    <!-- /Testimonial -->
+    <!-- brand -->
+    <section class="flat-spacing-5 pt_0">
+        <div class="container">
+            <div dir="ltr" class="swiper tf-sw-brand" data-loop="false" data-play="false" data-preview="6" data-tablet="3" data-mobile="2" data-space-lg="0" data-space-md="0">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img class="lazyload" data-src="images/brand/brand-01.png" src="images/brand/brand-01.png" alt="image-brand">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img class="lazyload" data-src="images/brand/brand-02.png" src="images/brand/brand-02.png" alt="image-brand">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img class="lazyload" data-src="images/brand/brand-03.png" src="images/brand/brand-03.png" alt="image-brand">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img class="lazyload" data-src="images/brand/brand-04.png" src="images/brand/brand-04.png" alt="image-brand">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img class="lazyload" data-src="images/brand/brand-05.png" src="images/brand/brand-05.png" alt="image-brand">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-item">
+                                <img class="lazyload" data-src="images/brand/brand-06.png" src="images/brand/brand-06.png" alt="image-brand">
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="sw-dots style-2 sw-pagination-brand justify-content-center"></div>
+        </div>
+    </section>
+    <!-- /brand -->
+    
+    <!-- Icon box -->
+    <section class="flat-spacing-7 flat-iconbox wow fadeInUp" data-wow-delay="0s">
+        <div class="container">
+            <div class="wrap-carousel wrap-mobile">
+                <div dir="ltr" class="swiper tf-sw-mobile" data-preview="1" data-space="15">
+                    <div class="swiper-wrapper wrap-iconbox">
+                        <div class="swiper-slide">
+                            <div class="tf-icon-box style-border-line text-center">
+                                <div class="icon">
+                                    <i class="icon-shipping"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="title">Free Shipping</div>
+                                    <p>Free shipping over order $120</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tf-icon-box style-border-line text-center">
+                                <div class="icon">
+                                    <i class="icon-payment fs-22"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="title">Flexible Payment</div>
+                                    <p>Pay with Multiple Credit Cards</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tf-icon-box style-border-line text-center">
+                                <div class="icon">
+                                    <i class="icon-return fs-22"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="title">14 Day Returns</div>
+                                    <p>Within 30 days for an exchange</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tf-icon-box style-border-line text-center">
+                                <div class="icon">
+                                    <i class="icon-suport"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="title">Premium Support</div>
+                                    <p>Outstanding premium support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sw-dots style-2 sw-pagination-mb justify-content-center"></div>
+            </div>
+        </div>
+    </section>
+    <!-- /Icon box -->
+    
+
+ 
+       
+{% endblock  %}
+      
+

@@ -1,0 +1,39 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block body %}
+{% include "base/navbar_light.html" %}
+
+
+
+<div class="tf-page-title">
+    <div class="container-full">
+        <div class="heading text-center">Shop By category</div>
+    </div>
+</div>
+
+<section class="flat-spacing-1">
+    <div class="container">
+        <div class="tf-grid-layout lg-col-4 tf-col-2">
+
+            {% for categories in categories %}
+            <div class="collection-item hover-img">
+                <div class="collection-inner">
+                    <a href="{% url "shop_category" categories.slug %}" class="collection-image img-style">
+                        <img class=" ls-is-cached lazyloaded" data-src="{{categories.image.url}}" src="{{categories.image.url}}" alt="collection-img">
+                    </a>
+                    <div class="collection-content">
+                        <a href="{% url "shop_category" categories.slug %}" class="tf-btn collection-title hover-icon"><span>{{categories.name}}</span><i class="icon icon-arrow1-top-left"></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+{% endblock %}
